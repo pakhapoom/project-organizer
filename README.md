@@ -7,10 +7,10 @@ cd project-organizer
 chomd u+x init.sh
 ```
 
-Then, run the following command by replacing `<directory>` and `<project-name>` with the destination path and project name, respectively.
+Then, run the following command by replacing `<directory>` and `<project-name>` with the desired working directory and project name, respectively.
 
 ```zsh
 ./init.sh <directory> <project-name>
 ```
 
-Finaly, we might need to visit `pyproject.toml` to manage dependencies used in the project.
+Finally, we might need to visit `pyproject.toml` to manage dependencies used in the project.
