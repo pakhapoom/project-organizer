@@ -12,13 +12,13 @@ Please clone the repository to your local machine. This can be done using `termi
 ```zsh
 git clone https://github.com/pakhapoom/project-organizer.git
 cd project-organizer
-chmod u+x init.sh
 ```
 
 ### Step 2: Locate your working directory
-In `Project Organizer`, everything is encapsulated in a shell script file, named `init.sh`. You can execute the file by using the following command and replacing `<directory>` and `<project-name>` with the desired working directory and project name, respectively.
+In `Project Organizer`, everything is encapsulated in a shell script file, named `init.sh`. You can execute the file by using the following commands and replacing `<directory>` and `<project-name>` with the desired working directory and project name, respectively.
 
 ```zsh
+chmod u+x init.sh
 ./init.sh <directory> <project-name>
 ```
 
@@ -40,7 +40,7 @@ The tree structure of the new project is supposed to look like the following str
 └── README.md
 ```
 
-Finally, we might need to visit `pyproject.toml` to manage dependencies used in the project.
+Finally, you might need to visit `pyproject.toml` to manage dependencies used in the project.
 
 ## Acknowledgement
 I want to give a big shoutout to awesome friends of mine, Nut and Smith, who taught me how to use `poetry` and have inspired me to become a data scientist who can code organizably and structurally.
