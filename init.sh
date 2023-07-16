@@ -18,6 +18,7 @@ do
 done
 
 touch README.md
+cp "$current_dir/gitignore_starter.txt" .gitignore
 
 git add .
 git commit -m ':tada: initial commit'
