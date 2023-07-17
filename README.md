@@ -32,7 +32,7 @@ The tree structure of the new project is supposed to look like the following str
 ├── report
 ├── <project_name>
 │   └── __init__.py
-└── tests
+├── tests
 │   └── __init__.py
 ├── .gitignore
 ├── .pre-commit-config.yaml
