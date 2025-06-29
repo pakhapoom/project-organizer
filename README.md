@@ -26,18 +26,17 @@ The directory structure of the new project is expected to follow the layout show
 
 ```zsh
 <project-name>
-├── data
-├── src
+├── src <project_name>
 │   └── __init__.py
 ├── tests
 │   └── __init__.py
 ├── .gitignore
-├── .pre-commit-config.yaml
+├── README.md
 ├── pyproject.toml
-└── README.md
+└── uv.lock
 ```
 
-Finally, you may need to edit the `pyproject.toml` file to manage the project's dependencies.
+Finally, you may need to edit the `pyproject.toml` file to manage the project's dependencies by running `uv add <package>`.
 
 ## Acknowledgement
 I want to give a big shoutout to my awesome friends, Nut and Smith, who have inspired me to become a data scientist who writes clean, organized, and structured code.
