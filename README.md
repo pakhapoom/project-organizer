@@ -2,12 +2,12 @@
 A starter kit for setting up a new Python project. 
 
 ## Prerequisites
-- [poetry](https://python-poetry.org/docs/#installation)
 - [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+- [uv](https://docs.astral.sh/uv/getting-started/installation/)
 
 ## Usage
 ### Step 1: Clone the repository
-Please clone the repository to your local machine. This can be done using `terminal` or `Powershell`. You might need to change directory to a proper location for the repository. Then, run the following commands.
+Please clone the repository to your local machine. This can be done using the Terminal or PowerShell. You may need to navigate to an appropriate directory where you want the repository to be located. Then, run the following commands:
 
 ```zsh
 git clone https://github.com/pakhapoom/project-organizer.git
@@ -15,22 +15,19 @@ cd project-organizer
 ```
 
 ### Step 2: Locate your working directory
-In `Project Organizer`, everything is encapsulated in a shell script file, named `init.sh`. You can execute the file by using the following commands and replacing `<directory>` and `<project-name>` with the desired working directory and project name, respectively.
+In `Project Organizer`, everything is encapsulated within a shell script file, named `init.sh`. You can execute this script by running the following commands and replacing `<project-name>` with project name. Note that this project will be inside the same directory as you clone this repository.
 
 ```zsh
-chmod u+x init.sh
-./init.sh <directory> <project-name>
+bash ./init.sh <project-name>
 ```
 
 ### Step 3: Check the working directory
-The tree structure of the new project is supposed to look like the following structure.
+The directory structure of the new project is expected to follow the layout shown below.
 
 ```zsh
 <project-name>
 ├── data
-├── notebooks
-├── report
-├── <project_name>
+├── src
 │   └── __init__.py
 ├── tests
 │   └── __init__.py
@@ -40,7 +37,7 @@ The tree structure of the new project is supposed to look like the following str
 └── README.md
 ```
 
-Finally, you might need to visit `pyproject.toml` to manage dependencies used in the project.
+Finally, you may need to edit the `pyproject.toml` file to manage the project's dependencies.
 
 ## Acknowledgement
-I want to give a big shoutout to awesome friends of mine, Nut and Smith, who taught me how to use `poetry` and have inspired me to become a data scientist who can code organizably and structurally.
+I want to give a big shoutout to my awesome friends, Nut and Smith, who have inspired me to become a data scientist who writes clean, organized, and structured code.
